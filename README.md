@@ -8,9 +8,9 @@ Tic Tac Toe is a simple two-player game where the first player uses 'O' and the 
 Q-Learning is an online, off-policy reinforcement learning algorithm used to find the optimal action-selection policy for any given finite Markov decision process. It employs epsilon-greedy exploration and uses the SARSAmax method of TD(0) updates. In this project, the state of the game is represented as a 9-tuple indicating the board status. Each cell in the 3x3 grid can be in one of three states: empty, occupied by 'O', or occupied by 'X'. The agent learns to play the game by exploring different board configurations and updating its Q-values based on the rewards received from winning, losing, or drawing a game.
 
 The Q-value for a state-action pair is updated using the following formula:
-$$
-Q(s, a) \leftarrow Q(s, a) + \alpha \left[r + \gamma \max_{a'} Q(s', a') - Q(s, a)\right]
-$$
+
+$$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[r + \gamma \max_{a'} Q(s', a') - Q(s, a)\right] $$
+
 where:
 - $s$ is the current state
 - $a$ is the action taken
